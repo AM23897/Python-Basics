@@ -1,6 +1,4 @@
-
-
-%pwd
+%pwd(Will let you know in which drive your python files are stored)
 'C:\\Users\\Shubhangi sakarkar'
 Data Types
 bool: Boolean (true/false) types. Supported precisions: 8 (default) bits.
@@ -13,7 +11,7 @@ float -> 3.45
 str -> 'data scientist'
 # bool, int, float, str
 a = 'Data Science'
-print(a)
+print(a)  [print function helps to print the output]
 type(a)
 Data Science
 str
