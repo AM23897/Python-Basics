@@ -1,6 +1,8 @@
 %pwd(Will let you know in which drive your python files are stored)
 'C:\\Users\\Shubhangi sakarkar'
-Data Types
+
+
+#Data Types
 bool: Boolean (true/false) types. Supported precisions: 8 (default) bits.
 int: Signed integer types. Supported precisions: 8, 16, 32 (default) and 64 bits.
 float: Floating point types. Supported precisions: 16, 32, 64 (default) bits and extended precision floating point (see note on floating point types).
@@ -10,34 +12,28 @@ int -> 3,5,-1,-9
 float -> 3.45
 str -> 'data scientist'
 # bool, int, float, str
+
+
 a = 'Data Science'
 print(a)  [print function helps to print the output]
+type(a)   [Type function is used to check the datatype of varibale]
 type(a)
-Data Science
 str
-This Python Tut
-This is
 
-this is point 1
-this is point 2
-​
-​
-​
-type(a)
-str
 z = True
 type(z)
 bool
+
+
 #Autotypecasting
 3 + 4.5
 7.5
-True + 2
+True + 2  (True=1,False=0)
 3
 False+6
-False+6
 6
-int(5.6)
-Forced Typecasting
+
+#Forced Typecasting
 3 + int(4.5)
 7
 bool(-18)
@@ -48,48 +44,32 @@ True
 0
 bool(0)
 False
-​
-# bool -> int -> float -> string
+
+# bool -> int -> float -> string (Order of conversion)
 bool(-18)
-​
-​
-name = 'ashok'
+True
+name = 'shubhangi'
 type(name)
 str
-Type Casting
+#Type Casting
 3 + 6.5
-# bool -> int -> float -> str
 True + 6 + 7.5
+14.5
 int(7.9) + 3
-bool(0)
-​
-​
-​
-​
-​
-​
+10
+
 #Auto typecasting
 True + 3 + int(4.5)
 8
-# Bool -> int -> float -> str
+
 True + 18
 19
-str(3) + 'Ashok'
-'3Ashok'
-​
-​
+str(3) + 'shubhangi'
+'3shubhangi'
+
 #Manual / forced type casting
-4 + float('9.5')
-13.5
-4.5 + 5 + bool(-8) + int('6') + 3.5 + True
-21.0
-%pwd
-'C:\\Users\\Shubhangi sakarkar'
-float('6.5')
-6.5
-int('7') + 5
-12
-int('ashok')
+
+int('shubhangi')
 ---------------------------------------------------------------------------
 ValueError                                Traceback (most recent call last)
 <ipython-input-21-1a3577233c62> in <module>
@@ -106,56 +86,7 @@ float
 int(a)
 3
 #auto type casting
-5 + 6.7
-11.7
-# bool --> int --> float --->str
-a= 3
-b = 4.5
-print(type(a))
-print(type(b))
-<class 'int'>
-<class 'float'>
-a + int(b)
-7
-3 + int('4')
-7
-# True -> 1, False -> 0
-False + 4
-4
-#Anything not zero is taken as booleon True
-bool(-18)
-True
-3 + int('6')
-9
-3 + int('4.5')
----------------------------------------------------------------------------
-ValueError                                Traceback (most recent call last)
-<ipython-input-32-08365561c7ff> in <module>
-----> 1 3 + int('4.5')
 
-ValueError: invalid literal for int() with base 10: '4.5'
-
-3 + int(4.5)
-7
-int(float('4.5'))
-4
-bool(4.5)
-True
-3.5 + bool(-18) + int('3')
-7.5
-name = "ashok"
-type(name)
-str
-type(a)
-int
-b = 4.5
-type(b)
-float
-z = True
-type(z)
-bool
-a = 3
-b = 5.4
 c = a+b
 c
 7.5
@@ -173,18 +104,8 @@ ValueError                                Traceback (most recent call last)
 ----> 1 4 + int('a')
 
 ValueError: invalid literal for int() with base 10: 'a'
-
-​
-​
-float(3)
-3.0
-bool(-18.9)
-True
-int(3.4 + bool(-20)+int(8.4))
-12
-%pwd
-'C:\\Users\\Shubhangi sakarkar'
-Slicing
+        
+#Slicing
 a = 'I am a Data Scientist'
 print(a)
 a[3] # selector operator []
@@ -197,7 +118,6 @@ a[5:] # : is slicing operation
 'a Data Scientist'
 a[:5]
 'I am '
-# : -> slicing operator
 a[7:]
 'Data Scientist'
 a[:7]
@@ -208,29 +128,20 @@ a[-9:-12]
 #Index starts from ZERO 0
 a[7]
 a
-# Slicing Operator :  Gives you Range
+# Slicing Operator :  Gives you start stop step
 a[7:21:1]
 print(a)
 a[0:15:2]
-​
-a[-5:]
-​
-​
-# :  is a slicing operator
+
+a[-5:] [Reverse order]
+
 a[7:11]
 a[7:]
 a[:11]
 print(a)
 bool(a)
-d = '32'
-print(d)
-type(d)
-float(d)
-b = 0
-bool(b)
-​
-​
-False
+
+## Examples
 3 + 2.5
 5.5
 bool("Me")
@@ -270,16 +181,7 @@ z = False
 a*z
 a = "I am a DataScientist"
 len(a)
-message[10:3]
-​
-​
-message[5:10]
-​
-​
-​
-​
-message[45:34]
-This is to test
+
 a='I am a Data Scientist'
 type(a)
 c = 20/6
@@ -287,8 +189,7 @@ c
 d = 'This is interesting'
 d
 len(d)
-​
-​
+
 a = 3
 b = 5
 print(a)
@@ -304,74 +205,22 @@ a=3.0
 print(a)
 type(a)
 print(a)
-​
+
+#import datetime as dt (datetime is package present in python for datetime calculation)
+td = dt.date.today() [This will give current date]
+print(td.month)      [This will give current month]
+print(dt.datetime.now()) [This will give current date and time]
+
+christmas_day = dt.date(2020,12,25) [Defining the christmas day]
+print(christmas_day -td)  [It will give you how many days left for christmas]
+
 import datetime as dt
-td = dt.date.today()
-print(td.month)
-print(dt.datetime.now())
-td =dt.date.today()
-christmas_day = dt.date(2018,12,25)
-print(christmas_day -td)
-dt.date.today()
-tday = dt.date.today()
-tday
-someday = dt.date(2018,12,20)
-someday
-print(someday - tday)
-# dt is alias name of datetime
-import datetime as dt
-sometime = dt.datetime.strptime('27-11-2018','%d-%m-%Y')
-sometime
-dt.date(2018,9,29)
-tday = dt.date.today()
-tday
-someday = dt.date(2018,12,20)
-someday
-someday - tday
-print(dta.date.today())
-td = dt.date.today()
-type(td)
-print(datetime.date.today())
-tday.day
-datetime.date.today()
-tday = dt.date.today()
-print(tday)
-type(tday)
-type(tday)
-someday = dt.date(2019,10,20)
-print(someday)
-​
-someday.month
-someday - tday
-dt.datetime.strptime('03-1900',"%m-%Y")
-​
-print(someday - td)
-datetime.date.today()
-import datetime as dt
-dt.date.today()
-from datetime import date
-date.today()
-print(dt.date.today())
-from datetime import date
-a = 3
-type(a)
-td = date.today()
-print(td)
-td.month
-td = date.today()
-type(td)
-a = '2018-7-20'
-type(a)
-from datetime import date
-someday = date(2018,7,20)
-print(someday)
-print(someday - td)
-someday = dt.date(2016,5,25)
-​
-td - dt.timedelta(days=100,hours=100)
+sometime = dt.datetime.strptime('27-11-2018','%d-%m-%Y') [new datetime parsed from a string]
+# timedelta function
+td - dt.timedelta(days=100,hours=100) [This function provide time gap calculation]
 tday+dt.timedelta(days=350,hours=100)
 dt.datetime.now()-dt.timedelta(days=-350,hours=95)
-​
+
 date.today() + dt.timedelta(hours=40)
 today = dt.date.today()
 today
@@ -429,7 +278,7 @@ print(date.isoweekday(date.today()))
 print(date.today())
 date.today()
 
-Math Operators
+#Math Operators
 print(10 + 4) # add (returns 14) 
 print(10 - 4) # subtract (returns 6) 
 print(10 * 4) # multiply (returns 40) 
@@ -437,6 +286,7 @@ print(10**4) # exponent (returns 10000)
 print(10 / 4) # divide (returns 2.5) 
 print(5 % 4) # modulo (returns 1) - also known as the remainder
 print(22//4) # Floor Division you get, 5
+
 Comparision / Logical Operators
 # comparisons (these return True) 
 print(5 > 3 )
@@ -445,7 +295,7 @@ print(5 < 3 )
 print(5 <= 3)
 print(5 != 5)
 print(5 == 5) # boolean operations (these return True) 
-​
+
 # evaluation order: not, and, or
 Logical Operators
 T and T --> T
@@ -465,10 +315,10 @@ False
 # Logical operators and or
 (5<3) or (10<12)
 True
-​
+
 print(5 > 3 and 6 < 3 )
-print(5 > 3 or 5 < 3 )
 False
+print(5 > 3 or 5 < 3 )
 True
 True == 1
 True
@@ -478,7 +328,9 @@ a=3
 b=2
 (a<3 and b>1) 
 (5 >= 3 or 6 > 100) and (True == bool(23))
-Conditional Statement
+
+
+#Conditional Statement
 if (5 < 3):
     print("This is true")
     print("I am in True block")
@@ -486,21 +338,20 @@ else:
     print("This is false")
     
 print("I am out of IF block")
-​
-​
-​
-x = 2
-​
-if (x>0):
+O/P:-This is false
+     I am out of IF block
+
+        
+  x=2      
+ if (x>0):
     print("Positive number")
     print("In the IF block")
 else:
     print("Negative number")
     print("In the else block")
-    
-​
-​
-​
+O/P:- Positive number
+      In the IF block
+
 x=5
 if (x>0):
     print("X is a positive")
@@ -510,15 +361,11 @@ else:
     print("I m if Else/False Block")
     
 print("I am out of IF-ELSE block")
-​
-​
-​
-​
-​
-​
-​
-​
-​
+O/P:-X is a positive
+    I m if True Block
+    I am out of IF-ELSE block
+    
+    
 if 5 < 3:
     print("I am in if block")
     print("So the statement is TRUE")
@@ -526,13 +373,12 @@ else:
     print("I am in ELSE block")
     
 print("I am anyway printed, out of IF")
+    O/P:-I am in ELSE block
+         I am anyway printed, out of IF
     
-​
-​
-​
-​
-​
-False or -18
+ False or -18
+ O/P:- -18
+    
 if (5<3) :
     print("True")
     print("another statement")
@@ -540,13 +386,12 @@ else :
     print("False")
     print("another else st")
 print("This prints anyway")    
-​
-    
-    
-​
-​
-​
+O/P:-False
+another else st
+This prints anyway
 Conditional Statements
+
+
 x=12
 if (x>10) :
     print("This is True or IF block")
@@ -555,41 +400,35 @@ else :
     print("This is else block")
     
 print("\n ---- \n I am out of IF block")
-​
-​
+ O/P:-This is True or IF block
+I am still in IF
+
+ ---- 
+ I am out of IF block
+
 if (5<3):
     print("This is IF block")
 else :
     print("This is Else Block")
-​
-if (5<3) :
+O/P:-This is Else Block
+
+    if (5<3) :
     print("True block statement 1")
     print("True block statement 2")
     print("True block statement 3")
 else:
     print("False block")
-​
-​
-​
-​
-​
-x = 0
+    O/P:-False block
+0
 if (x > 0) :
     print("X is Positive")
-​
+
 elif (x<0):
     print("X is Negative")   
 else:
     print("X is ZERO")
-​
-          
-​
-​
-​
-​
-​
+    O/P:-X is ZERO
 x=-100
-​
 if ((x>0) or (x==-100)):
     print("X is positive Value or -100")
     print("I am if loop")
@@ -600,18 +439,22 @@ else:
     print("X is Zero")
     
 print("I am out of IF looP")
+O/P:-X is positive Value or -100
+I am if loop
+I am out of IF looP
     
 x = 6
-​
+
 if x%2 == 0 :
     print(x, " is even number")
     print("hello..")
 else :
     print(x, " is ODD number")
-​
+
 print("this is out of IF else block")
-​
-​
+O/P:-6  is even number
+hello..
+this is out of IF else block
 x = -20
 # if/elif/else statement
 if x > 0:
@@ -622,136 +465,91 @@ elif x == 0:
 else: 
     print('negative') 
 print("I am out of IF block")
-​
+
 # single-line if statement (sometimes discouraged) 
 x=5
 if x > 0: print('positive') 
-​
-Lists
-Python lists are very flexible and can hold completely heterogeneous, arbitrary data, and they can be appended to very efficiently.
+    
+#### Python Data Object
+1)List
+2)Tuple
+3)String
+4)Dictonary
+5)Set
+6)Function and Loop
 
-a = [3,4,6.5,True,[4,5],'Ashok']
-a
+
+##Lists
+Python lists arecollection which are very flexible and can hold completely heterogeneous, arbitrary data, and they can be appended to very efficiently.
+
+a = [3,4,6.5,True,[4,5],'Shubhangi'] [Defining a list]
+print(a)
 a[4][1]
+O/P:-5
 type(a)
-​
-a = [ 3, 4, 'ashok',[12,14,22],True]
+O/P:-type(a)
+a = [ 3, 4, 'shubhangi',[12,14,22],True]
 a
 a[3][1]
-​
+O/P:-14
 a = [2,True,3.4,4,'data science',[50,60]]
 a
 a[5][1]
+O/P:-60
 type(a[1])
+O/P:-bool
+    
+    
 myfamily = ['mom','dad','me']
 myfamily
-myfamily.sort()
+O/p:-['mom','dad','me']
+    
+myfamily.sort() [sort function will arrange list objects in ascending order ]
 myfamily
-myfamily.append('wife')
+O/P:-['dad','me','mom']
+    
+myfamily.append('wife') [append function will add new object to lsit from end position]
 myfamily
-myfamily.extend(['bro','sis','grandma'])
+O/P:-['dad', 'me', 'mom', 'wife']
+    
+myfamily.extend(['bro','sis','grandma']) [extend function helps to add multiple member in one shot]
 myfamily
-myfamily.remove('bro')
+O/P:-['dad', 'me', 'mom', 'wife', 'bro', 'sis', 'grandma']
+
+myfamily.remove('bro') [remove function to used to remove said object from list]
 myfamily
-myfamily.pop(-1)
+O/P:-['dad', 'me', 'mom', 'wife','sis', 'grandma']
+    
+myfamily.pop(-1) [Pop function removes object from list at end position but if index is well defined,it will pop only that object]
 myfamily
-myfamily.insert(1,'uncle')
+O/P:-['dad', 'me', 'mom', 'wife','sis']
+    
+myfamily.insert(1,'uncle') [Insert function will insert object at specified index]
 myfamily
-myfamily[-3:]
-myfamily.
-​
-​
-z = [3,4.0,True]
-z
+O/P:-
+['dad', 'uncle','me', 'mom', 'wife', 'sis', 'grandma', 'sis']
+
+myfamily[-3:] [Selecting objects from end to start]
+myfamily
+O/P:-['sis', 'grandma', 'sis']
+
 a = [3,4.0,True,'ashok',[56,78,89]]
 a
 a[4][2]
-myfamily = ['dad','mom','me']
-myfamily.append('wife')
-myfamily.extend(['bro','sis','grandma','grandfa'])
-myfamily
-myfamily.remove('bro')
-myfamily
-myfamily.pop(-1)
-myfamily
-myfamily.insert(4,'sis-in-law')
-myfamily
-​
-myfamily.extend(['wife','sis-in-law','daughter'])
-myfamily
-myfamily.append('grand ma')
-myfamily
-myfamily.pop(0)
-myfamily
-my_list = [3,4,15,5.9]
-print(my_list)
-type(my_list)
-my_list.sort()
-my_list
-myfamily = ['mom','dad','me']
-myfamily
-myfamily.extend(['wife','brother'])
-myfamily.append('sis')
-myfamily
-​
-myfamily.extend(['wife','bro','daughter'])
-myfamily
-myfamily.insert(0,'grandma')
-myfamily.
-myfamily.sort(reverse=True)
-myfamily
-myfamily
-myfamily
-myfamily
-myfamily.pop(4)
-myfamily
-myfamily.remove('brother')
-myfamily
-myfamily
-family.extend(['bro','uncle','aunt'])
-family
-myfamily
-family.append('wife')
-family
-family.insert(4,"sis")
-family
-​
-​
-family.pop(3)
-family
-family.remove('me')
+O/P:-89
+    
+
 ## properties: ordered, iterable, mutable, can contain multiple data types       
 # create an empty list (two ways) 
 empty_list = [] 
 empty_list = list() 
-# create a list 
-simpsons = ['homer', 'marge', 'bart']
-# examine a list 
-print(simpsons[0])        # print element 0 ('homer’) 
-print(len(simpsons))    # returns the length (3)
- # modify a list (does not return the list) 
-simpsons.append('lisa') # append element to end 
-simpsons.extend(['itchy', 'scratchy'])  # append multiple elements to end 
-print(simpsons)
-​
-family.remove('me')
-family.pop(2)
-​
-myfamily.sort()
-z = [3, 4.5,True]
-z.sort()
-z
-Tuples
-A tuple is a sequence of immutable Python objects. Tuples are sequences, just like lists. The differences between tuples and lists are, the tuples cannot be changed unlike lists and tuples use parentheses, whereas lists use square brackets. Creating a tuple is as simple as putting different comma-separated values.
 
-simpsons.insert(0, 'maggie')  # insert element at index 0 (shifts ˓→everything right) 
-print(simpsons)
-simpsons.remove('bart')  # searches for first instance and removes it 
-print(simpsons)
-simpsons.pop(0) # removes element 0 and returns it del
-print(simpsons)
-simpsons[0] = 'krusty' # replace element 0
-print(simpsons)
+Tuples
+A tuple is a sequence of immutable Python objects. Tuples are sequences, just like lists. 
+The differences between tuples and lists are, the tuples cannot be changed unlike lists 
+and tuples use parentheses, whereas lists use square brackets. Creating a tuple is as simple 
+as putting different comma-separated values.
+
 # create a tuple 
 digits = (0, 1, 'two',0,1,1,1)  # create a tuple directly 
 #recommend way to by using tuple function
@@ -760,16 +558,8 @@ digits = tuple([0, 1, 'two'])  # create a tuple from a list
 print(digits[2])  # returns ‘two’ 
 print(len(digits)) # returns 3 
 print(digits.count(0))  # counts the number of instances of that value (0) digits.index(1)  # returns the index of the first instance of that value (1) 
-# create a tuple 
-digits1 = (0, 1, 'two',0,1,1,1)  # create a tuple directly 
-# examine a tuple 
-print(digits1.count(1))  # counts the number of instances of that value (0) digits.index(1)  # returns the index of the first instance of that value (1) 
-len(digits1)
-digits[1]= 'one' #returns an assignment error
-my_tuple = (1,3.0,'works')
-my_tuple
-my_tuple2 = tuple(["this works too",8,10,True])
-type(my_tuple2)
+
+
 Strings
 # create a string 
 s = 'I like you' # examine a string 
@@ -784,12 +574,15 @@ s[-9:]
 snew = 'Hello Data Science World'
 snew[-5:]
 s1[6:3]
-Dictionaries
-Python dictionary is an unordered collection of items. While other compound data types have only value as an element, a dictionary has a key: value pair.
+
+
+##Dictionaries
+Python dictionary is an unordered collection of items. While other compound data types have only 
+value as an element, a dictionary has a key: value pair.
 
 Dictionaries are optimized to retrieve values when the key is known.
 
-​
+
 cust = dict(name='Rakesh',type='premier',loc ='Bangalore')
 cust['loc']
 ​
@@ -805,7 +598,10 @@ cust = dict( name = 'ashok',job = "DS Trainer", exp = 17)
 cust['job']
 ​
 Sets
-A set contains an unordered collection of unique and immutable objects. The set data type is, as the name implies, a Python implementation of the sets as they are known from mathematics. This explains, why sets unlike lists or tuples can't have multiple occurrences of the same element.
+A set contains an unordered collection of unique and immutable objects. 
+The set data type is, as the name implies, a Python implementation of the sets
+as they are known from mathematics. This explains, why sets unlike lists or tuples
+can't have multiple occurrences of the same element.
 
 # create an empty set
 empty_set = set()
